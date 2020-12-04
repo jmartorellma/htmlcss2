@@ -32,7 +32,91 @@ module.exports = {
       "max-line-length": 80,
       "max-empty-lines": 5,
       "no-descending-specificity": null,
-      "no-eol-whitespace": null,    
+      "no-eol-whitespace": null, 
+      "order/properties-order": [
+        [
+            {
+                "emptyLineBefore": "always",
+                "properties": [
+                    "position",
+                    "top",
+                    "right",
+                    "bottom",
+                    "left",
+                    "z-index"
+                ]
+            },
+            {
+                "emptyLineBefore": "always",
+                "properties": [
+                    "display",
+                    "float",
+                    "clear",
+                    "flex",
+                    "flex-grow",
+                    "flex-shrink",
+                    "flex-basis",
+                    "width",
+                    "max-width",
+                    "min-width",
+                    "height",
+                    "max-height",
+                    "min-height"
+                ]
+            },
+            {
+                "emptyLineBefore": "always",
+                "properties": [
+                    "font",
+                    "font-size",
+                    "font-weight",
+                    "font-style",
+                    "font-family",
+                    "font-variant",
+                    "font-feature",
+                    "font-kerning",
+                    "font-stretch",
+                    "line-height",
+                    "color",
+                    "text",
+                    "text-align",
+                    "text-decoration",
+                    "text-transform",
+                    "letter-spacing"
+                ]
+            },
+            {
+                "emptyLineBefore": "always",
+                "properties": [
+                    "background",
+                    "background-color",
+                    "background-image",
+                    "background-origin",
+                    "background-position",
+                    "background-repeat",
+                    "background-size",
+                    "border",
+                    "border-top",
+                    "border-right",
+                    "border-bottom",
+                    "border-left",
+                    "margin",
+                    "margin-top",
+                    "margin-right",
+                    "margin-bottom",
+                    "margin-left",
+                    "padding",
+                    "padding-top",
+                    "padding-right",
+                    "padding-bottom",
+                    "padding-left"
+                ]
+            }
+        ],
+        {
+            "unspecified": "bottomAlphabetical"
+        }
+    ],   
       "selector-nested-pattern": "^&",
       "value-keyword-case": null    
     }
