@@ -1,7 +1,12 @@
 module.exports = {
-    "extends": "stylelint-config-standard",
+    "extends": [
+      "stylelint-config-standard",
+      "stylelint-config-idiomatic-order"
+    ],
     "plugins": [
-      "stylelint-scss"
+      "stylelint-scss",
+      "stylelint-order",
+      "stylelint-declaration-block-no-ignored-properties"
     ],
     "rules": {
       "at-rule-no-unknown": [
