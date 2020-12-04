@@ -3,6 +3,7 @@
  */
 
 @import "variables";
+@import "mixins";
 
 /**
  * Import npm dependencies
@@ -21,7 +22,9 @@
  * It's a best practice to use a partial for each page
  */
 
+@import "layouts/_general";
 @import "layouts/home";
+@import "layouts/bands";
 
 /**
  * Do NOT include anything else in this file!

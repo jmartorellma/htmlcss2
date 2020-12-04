@@ -15,6 +15,8 @@ module.exports = {
           "ignoreAtRules": [
             "apply",
             "at-root",
+            "include",
+            "mixin",
             "responsive",
             "screen",
             "tailwind",
@@ -36,7 +38,6 @@ module.exports = {
       "order/properties-order": [
         [
             {
-                "emptyLineBefore": "always",
                 "properties": [
                     "position",
                     "top",
@@ -47,7 +48,6 @@ module.exports = {
                 ]
             },
             {
-                "emptyLineBefore": "always",
                 "properties": [
                     "display",
                     "float",
@@ -65,7 +65,6 @@ module.exports = {
                 ]
             },
             {
-                "emptyLineBefore": "always",
                 "properties": [
                     "font",
                     "font-size",
@@ -86,7 +85,6 @@ module.exports = {
                 ]
             },
             {
-                "emptyLineBefore": "always",
                 "properties": [
                     "background",
                     "background-color",
