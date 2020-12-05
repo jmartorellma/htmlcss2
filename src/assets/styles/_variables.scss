@@ -12,6 +12,7 @@ $font-size-destacat-extra-large: 2rem;
 $font-size-titol-small: 2.5rem;
 $font-size-titol-medium: 4rem;
 $font-size-titol-large: 6rem;
+$card-text-size: 0.9rem;
 
 $main-height: calc(100% - 112px);
 $imatge-main-fons: '../images/fons-delta.jpg';
@@ -26,6 +27,12 @@ $color-brown: #ea8c48;
 $color-text-logo:#f00;
 $color-footer:  #6b0000;
 
+
+//Custom Bootstrap
+
+$card-border-width: 2px;
+$card-border-radius: 5px;
+$card-border-color: $color-primary;
 $theme-colors: (
   "primary": $color-primary,
   "secondary": $color-secondary
