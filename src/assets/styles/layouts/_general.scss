@@ -45,6 +45,12 @@ main {
   overflow-y: auto;
 }
 
+.main-flex {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+}
+
 .container-main {
   display: flex;
   flex-grow: 1;
