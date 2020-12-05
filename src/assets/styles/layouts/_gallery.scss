@@ -2,6 +2,9 @@
   position: relative;
   display: flex;
   max-height: 20rem;
+  @include small {
+    max-height: 14rem;
+  }
   align-items: flex-start;
   flex-direction: column;
   justify-content: stretch;
@@ -21,6 +24,9 @@
   width: 100%;
   height: 30%;
   font-size: $font-size-titol-medium;
+  @include small {
+    font-size: $font-size-titol-small;
+  }
   font-weight: bold;
   font-family: $font-family-serif;
   color: $color-brown;

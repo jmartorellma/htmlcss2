@@ -1,3 +1,30 @@
-abbr {
-  text-decoration: none;
+.information-header {
+  display: flex;
+  height: 100%;
+  min-height: 20rem;
+  @include small {
+    min-height: 14rem;
+  }
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background: url($imatge-information-head);
+  background-size: cover;
+}
+
+.information-header__titol {
+  font-size: $font-size-titol-medium;
+  @include small {
+    font-size: $font-size-titol-small;
+  }
+  font-weight: bold;
+  font-family: $font-family-serif;
+  color: $color-brown;
+}
+
+.information-article {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
 }
