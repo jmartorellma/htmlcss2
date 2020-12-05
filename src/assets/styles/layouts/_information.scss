@@ -28,7 +28,79 @@
 
 .information-article {
   display: flex;
+  color: white;
   align-items: center;
   flex-direction: column;
   justify-content: flex-start;
+}
+
+.container-info {
+  max-width: 900px;
+  margin: auto;
+  padding-right: 5%;
+  padding-left: 5%;
+}
+
+.subtitol {
+  font-family: $font-family-serif;
+  color: $color-primary;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+hr {
+  border-top: 2px solid $color-primary;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+ol {
+  color: $color-primary;
+}
+
+li::marker {
+  font-size: 2rem;
+}
+
+.descripcio-titol {
+  font-size: 2rem;
+}
+
+.descripcio-mesures {
+  color: white;
+}
+
+.container-quote {
+  display: flex;
+  font-family: $font-family-serif;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  align-items: center;
+  flex-direction: row;
+
+  @include small {
+    flex-direction: column;
+  }
+
+  justify-content: space-between;
+}
+
+.container-quote__quote {
+  font-size: $font-size-destacat;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+.container-quote__text {
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+.information-picture {
+  width: 100%;
+}
+
+.text-comiat {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
 }
