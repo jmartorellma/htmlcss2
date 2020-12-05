@@ -21,14 +21,6 @@
   margin: auto;
 }
 
-.text-dastacat-portada {
-  text-align: center;
-
-  @include extra-large {
-    text-align: right;
-  }
-}
-
 .text-introduccio-portada__descripcio {
   width: 75%;
   font-size: $font-size-destacat;
@@ -41,11 +33,19 @@
     font-size: $font-size-destacat-extra-large;
   }
 
+  text-align: right;
   font-weight: bold;
   font-style: italic;
   font-family: $font-family-serif;
   line-height: $line-height-destacat;
-  margin: auto;
+  margin-top: auto;
+  margin-right: 0;
+  margin-bottom: auto;
+  margin-left: auto;
+}
+
+.text-dastacat-portada {
+  text-align: right;
 }
  
 .text-dastacat-portada__titol {
@@ -57,7 +57,6 @@
 
   @include extra-large {
     font-size: $font-size-titol-large;
-    text-align: right;
   }
 
   font-family: $font-family-serif;
@@ -72,45 +71,31 @@
 @supports (display: grid) {
   .grid-portada {
     display: grid;
-    height: 90%;
     grid-template-columns: 3fr 6fr 1fr 5fr 10fr 2fr;
     grid-template-rows: 15% 25% 15% 10% 35%;
   }
 
   .grid-portada__imatgeFons {
-    background: url($imatge-portada-fons);
-    background-size: cover;
     grid-column: 1 / 3;
     grid-row: 2 / 5;
   }
    
   .grid-portada__imatgeEsquerra {
-    background: url($imatge-portada-esquerra);
-    background-size: cover;
     grid-column: 2 / 4;
     grid-row: 3 / 6;
   }
   
   .grid-portada__imatgeDreta {
-    background: url($imatge-portada-dreta);
-    background-size: cover;
     grid-column: 5 / 7;
     grid-row: 4 / 6;
   }
 
   .text-introduccio-portada {
-    margin: auto;
     grid-column: 3 / 7;
     grid-row: 1 / 3;
   }
 
-  .text-dastacat-portada {
-    text-align: center;
-
-    @include extra-large {
-      text-align: right;
-    }
-
+   .text-dastacat-portada {
     grid-column: 4 / 7;
     grid-row: 3 / 6;
   }

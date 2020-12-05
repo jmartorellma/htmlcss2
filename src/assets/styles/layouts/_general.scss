@@ -34,6 +34,7 @@ abbr {
 }
 
 .main-navbar {
+  height: 56px;
   background-color: var(--dark);
 }
 
@@ -68,6 +69,12 @@ main {
   font-weight: bold;
   color: $color-footer;
   margin: auto;
+}
+
+.link-footer {
+  @include small {
+    font-size: 0.8rem;
+  }
 }
 
 .social {
